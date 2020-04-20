@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    float: left;
+    margin-top: 25px;
+}
+
+.header li,
+.header-right li {
+    float: left;
+    list-style: none;
+    font: 13px Arial, 'PingFang SC';
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/*超链接字体颜色，去下划线*/
+.header a,
+.header-right a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* 移动到字体上的颜色 */
+a:hover {
+    color: #3388ff;
+}
+
+/* 头部右边文本位置 */
+.header-right {
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+/* 清除浮动 */
+.clear {
+    clear: both;
+}
+
+/* 初始化body */
+.search {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+
+/* 搜索位置 */
+.search-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 图片大小 */
+.search-container img {
+    width: 360px;
+    height: 160px;
+}
+
+/* 初始化input */
+.search-input {
+    width: 390px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: none;
+    border: 2px solid #b8b8b8b8;
+    border-right: none;
+    float: left;
+
+}
+
+/* input点击时效果 */
+.search-input:focus {
+    outline: none;
+    border-color: deepskyblue;
+}
+
+/* 搜索按钮初始化 */
+.search-button {
+    outline: none;
+    width: 80px;
+    height: 34px;
+    background-color: #3388ff;
+    color: azure;
+    box-shadow: none;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+/* 指针移到按钮上的变化 */
+.search-button:hover {
+    cursor: pointer;
+    background-color: royalblue;
+}
+
+.search-container div img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: -30px;
+    margin-top: 4px;
+}
+
+/* 初始化footer */
+.footer {
+    position: fixed;
+    background-color: #fafafa;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+
+/* 底部文本初始化 */
+.footer li {
+    float: left;
+    list-style: none;
+    font: 12px Arial, 'PingFang SC';
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* 底部右边文本位置 */
+.footer-right {
+    float: right;
+    margin-right: 30px;
+}
+
+/* 底部文本颜色 */
+.footer a,
+.footer-right li {
+    color: #999999;
+    text-decoration: none;
+}
