@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-width: 1680px;
+    min-height: 1080px;
+}
+
+/* 头部初始化 */
+.header {
+    position: static;
+    background-color: #24292e;
+    margin-top: 0 auto;
+    float: left;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+}
+
+/* 头部列表初始化 */
+.header li,
+.header-right li {
+    float: left;
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 16px;
+}
+
+/* 头部超链接字体设置 */
+a {
+    color: #ffffff;
+    white-space: nowrap;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*指针移动到超链接伤的样式*/
+a:hover {
+    text-decoration: underline;
+}
+
+.header input {
+    width: 300px;
+    height: 28px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: none;
+    border: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+    background-color: hsla(0, 0%, 100%, .125);
+    margin-top: -3px;
+    text-indent: 8px;
+}
+
+/* 输入框内img位置 */
+.header-inpu-imag {
+    position: absolute;
+    margin-left: -45px;
+}
+
+
+/* 头部右边文本初始化 */
+.header-right {
+    float: right;
+    margin-right: 16px;
+    margin-top: 2px;
+}
+
+/* 清除浮动 */
+.clear {
+    clear: both;
+}
+
+
+/* body左边布局 */
+.body-left {
+    height: 100%;
+    width: 360px;
+    background-color: white;
+    float: left;
+}
+
+/* 左边文本位置初始化 */
+.body-left-test {
+    margin-top: 35px;
+}
+
+/* 左边字体，段落式样 */
+.body-left-test>div {
+    width: 260;
+    line-height: 21px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+
+}
+
+/* 绿色按钮式样初始化*/
+button {
+    outline: none;
+    background-color: mediumseagreen;
+    background-image: linear-gradient();
+    border: 1px solid rgb(27, 31, 35);
+    color: rgb(255, 255, 255);
+    width: 143.844px;
+    height: 34px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    margin-top: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* 白色按钮设置 */
+.White-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 102, 214);
+    font-size: 12px;
+    border-color: rgb(225, 228, 232);
+    height: 30px;
+}
+
+/* 指针移到绿色按钮上的变化 */
+button:hover {
+    cursor: pointer;
+    background-color: #28a745;
+}
+
+/* 左边指针移到白色按钮上的变化 */
+.body-left-test .White-button:hover {
+    cursor: pointer;
+    background-color: rgb(3, 102, 214);
+    color: rgb(255, 255, 255);
+}
+
+/* 按钮左边超链接 */
+.button-next-test {
+    display: inline-block;
+    color: rgb(3, 102, 214);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* 左边第二段文本 */
+.body-left-test-second {
+
+    border-top: 1px solid rgb(225, 228, 232);
+    padding-top: 16px;
+}
+
+/* body右边布局初始化 */
+.body-right {
+    height: 100%;
+    width: 360px;
+    float: right;
+    background-color: white;
+    background-color: rgb(245, 245, 245);
+}
+
+/* 图片设置 */
+.body-right img {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.body-right div {
+    width: 260;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    text-align: left;
+}
+
+.body-right div>a {
+    color: black;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.body-right div>a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.body-right div>div {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+
+
+/* body中间布局*/
+.body-mid {
+    height: 100%;
+    margin-left: 360px;
+    margin-right: 360px;
+    border-left: 1px solid;
+    border-left-color: rgb(225, 228, 232);
+    background-color: rgb(245, 245, 245);
+}
+
+/* 中间文本初始化 */
+.body-mid-test {
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(225, 228, 232);
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 60%, #fff), linear-gradient(70deg, #dbedff 32%, #ebfff0);
+
+}
+
+/* 中间文本字体，段落初始化 */
+.body-mid-test>div {
+    width: 260;
+    line-height: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 30px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+
+.body-mid-test div>div {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+/* 中间按钮第一个设置 */
+.body-mid-test button {
+    width: 215px;
+    height: 42px;
+    font-size: 18px;
+}
+
+/* 第二个按钮设置 */
+.body-mid-test-second-button {
+    background-color: white;
+    color: black;
+}
+
+/* 第二个按钮点击式样 */
+.body-mid-test .body-mid-test-second-button:hover {
+    cursor: pointer;
+    background-color: rgb(225, 228, 232);
+}
+
+/* 中间第二段文本 */
+.body-mid-test-second {
+    height: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(225, 228, 232);
+    background-color: white;
+    margin-top: 10px;
+}
+
+.body-mid-test-second>div {
+    width: 260;
+    line-height: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.body-mid-test-second div>div {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+/* 中间第二段文本按钮点击样式 */
+.White-button:hover {
+    cursor: pointer;
+    background-color: rgb(3, 102, 214);
+    color: rgb(255, 255, 255);
+}
+
+/* 中间第三段注释部分 */
+.body-mid-test-third {
+    position: static;
+    margin-top: 0 auto;
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+    bottom: 0;
+}
+
+/* 注释列表化 */
+.body-mid-test-third li {
+    float: left;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 12px;
+    color: #586069;
+}
+
+/* 超链接设置 */
+.body-mid-test-third a {
+    color: rgb(3, 102, 214);
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* 中间底部 */
+.body-mid-footer {
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+}
+
+/* 中间底部浮动化 */
+.mid-footer-left {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* 底部超链接字体格式 */
+.mid-footer-left a {
+    color: #586069;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* 指针移动到中间底部超链接 */
+.mid-footer-left a:hover {
+    text-decoration: none;
+}
+
+.mid-footer-right {
+    float: right;
+    margin-right: 58%;
+    margin-top: 0px;
+}
+
+td {
+    padding: 0px 27px 0px 27px;
+}
+
+.mid-footer-right a {
+    color: #586069;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-weight: 400;
+    font-size: 12px;
+}

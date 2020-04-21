@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    min-width: 1080px;
+}
+
 .header {
     float: left;
     margin-top: 25px;
