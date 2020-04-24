@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+
+
+    <!-- 
+    <form action="" id="form1">
+        <input type="text" class="" id="ji" >
+        <div> 12</div>
+       
+        <input type="text" class="" autocomplete="on" value="mini">
+    </form>
+   
+    
+    <div class="test"> 123</div>
+    
+    <style>
+        .test{
+            background-color: aqua;
+        }
+    </style> -->
+
+    <div class="main">
+
+    </div>
+
+    <button onclick="ajax()">
+    ajax</button>
+
+    <button onclick="test()">
+    test
+    </button>
+
+</body>
+
+<script>
+    // console.log( $('#test').val("wer"))
+    // $("input:empty").val('asd')
+    // $('input:first').val('first')
+
+    // $('div').css('background-color','red')
+    // $('div').html("<a href='#'>aaa</a>")
+    // $('div').text("<a href='#'>aaa</a>")
+    // $('input').attr("value",'1')
+    // console.log($('#form1:input')) 
+    function ajax() {
+        $.ajax({
+            type: "POST",
+            async: true,
+            url: "http://examples.banyuan.club/banyuan/ajax",
+            data: {
+                status: 'time'
+            },
+            success: function (result) {
+
+              $('.main').html("<span>成功</span>")
+            },
+            error: function (error) {
+                // $('.main').html("<span>失败</span>");
+                $('.main').html("<span>失败</span>")
+            }
+
+        })
+    };
+
+    function test(){
+        console.log(1);
+    }
+</script>
+
+
+</html>
+if ($('#name').val().length < 5 || $('#name').val().length > 10) {
+    // $('#result').text("wrong");
+    alert('姓名小于5');
+    return;}
+// 			} else {
+// 				if ($('#email').val().length < 8 || $('#email').val().length > 15) {
+// 					return;
+// 				}
+// 			}
+
+// 			$.ajax({
+// 				type: "POST",
+// 				async: true,
+// 				url: "http://examples.banyuan.club/banyuan/ajax",
+// 				dataType: 'json',
+// 				data: {
+// 					status:'error'
+// 				},
+// 				success: function (data) {
+// $('#result').text("wrong")
+// 				},
+// 				error: function (error) {
+// 					alert('wrong');
+// 				}
+
+// 			})
+})	
