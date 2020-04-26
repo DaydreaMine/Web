@@ -34,16 +34,19 @@
 
 			if ($('#name').val().length < 5 || $('#name').val().length > 10) {
 				$('#name-result').text("姓名长度大于5小于10");
-				return;
+				if ($('#email').val().length < 8 || $('#email').val().length > 15) {
+					$('#email-result').text("email长度大于8小于15");
+					return;
+				}
 			} else {
 				$('#name-result').text(' ');
 				if ($('#email').val().length < 8 || $('#email').val().length > 15) {
 					$('#email-result').text("email长度大于8小于15");
 					return;
+				} else {
+					$('#email-result').text(' ');
 				}
 			}
-
-			$('#email-result').text(' ')
 
 
 			$.ajax({
@@ -153,6 +156,7 @@
 		border-radius: 3px;
 		text-shadow: 1px 1px 1px #9E3F3F;
 		cursor: pointer;
+		margin-top: 5px;
 	}
 
 	.basic-grey .button:hover {
@@ -160,7 +164,11 @@
 	}
 
 	.wrong {
+		position: absolute;
 		color: red;
+		padding-left: 110px;
+		margin-top: -18px;
+		font-size: 10px;
 	}
 </style>
 
